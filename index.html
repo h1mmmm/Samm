@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Sammuuu ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  overflow: hidden;
+}
+
+.card {
+  width: 90%;
+  max-width: 700px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 25px;
+  padding: 35px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  animation: fadeIn 1.5s ease;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.heart {
+  position: absolute;
+  color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happyyyy Mother’s Dayyyyy sammmmuuuu babyyyyyyyyyyyyyyyyy ❤️🫂</h1><p>
+  As I’ve told u, u r my everything!! Sometimes the way u teach me things,
+  care n understand me feels just like a mother’s love too...... ❤️
+</p>
+
+<p>
+  I was about to wish u in the morning, but I thought u might get angry,
+  so I didn’t!! But since morning this was constantly on my mind tht I still
+  haven’t wished u so here I ammm 😁🫶🏻
+</p>
+
+  </div>  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerHTML = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 300);
+  </script></body>
+</html>
